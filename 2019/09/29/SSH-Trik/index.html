@@ -6,17 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="top -c top:-c : ps aux">
+    <meta name="description" content="SSH, atau Secure Shell, merupakan protokol administrasi remote yang memperbolehkan pengguna untuk mengontrol dan memodifikasi server remote mereka melalui internet. ssh [user]@[host]:~$ ssh root@117.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Command Pada CentOS">
-<meta property="og:url" content="https://muga.my.id/2019/09/28/Command-Pada-CentOS/index.html">
+<meta property="og:title" content="SSH Trik">
+<meta property="og:url" content="https://muga.my.id/2019/09/29/SSH-Trik/index.html">
 <meta property="og:site_name" content="MUGA">
-<meta property="og:description" content="top -c top:-c : ps aux">
+<meta property="og:description" content="SSH, atau Secure Shell, merupakan protokol administrasi remote yang memperbolehkan pengguna untuk mengontrol dan memodifikasi server remote mereka melalui internet. ssh [user]@[host]:~$ ssh root@117.">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-09-28T06:53:16.465Z">
+<meta property="og:image" content="https://muga.my.id/images/ssh.png">
+<meta property="og:updated_time" content="2019-09-29T03:33:53.033Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Command Pada CentOS">
-<meta name="twitter:description" content="top -c top:-c : ps aux">
+<meta name="twitter:title" content="SSH Trik">
+<meta name="twitter:description" content="SSH, atau Secure Shell, merupakan protokol administrasi remote yang memperbolehkan pengguna untuk mengontrol dan memodifikasi server remote mereka melalui internet. ssh [user]@[host]:~$ ssh root@117.">
+<meta name="twitter:image" content="https://muga.my.id/images/ssh.png">
     
     
         
@@ -36,7 +38,7 @@
         
     
     <!-- title -->
-    <title>Command Pada CentOS</title>
+    <title>SSH Trik</title>
     <!-- styles -->
     <link rel="stylesheet" href="/css/style.css">
     <!-- rss -->
@@ -68,10 +70,8 @@
     <span id="actions">
       <ul>
         
-        <li><a class="icon" href="/2019/09/29/SSH-Trik/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
         
-        
-        <li><a class="icon" href="/2019/08/18/materi-hosting/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        <li><a class="icon" href="/2019/09/28/Command-Pada-CentOS/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
         
         <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
         <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
@@ -84,16 +84,16 @@
     <br/>
     <div id="share" style="display: none">
       <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://muga.my.id/2019/09/28/Command-Pada-CentOS/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=https://muga.my.id/2019/09/28/Command-Pada-CentOS/&text=Command Pada CentOS"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://muga.my.id/2019/09/28/Command-Pada-CentOS/&title=Command Pada CentOS"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://muga.my.id/2019/09/28/Command-Pada-CentOS/&is_video=false&description=Command Pada CentOS"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=Command Pada CentOS&body=Check out this article: https://muga.my.id/2019/09/28/Command-Pada-CentOS/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=https://muga.my.id/2019/09/28/Command-Pada-CentOS/&title=Command Pada CentOS"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=https://muga.my.id/2019/09/28/Command-Pada-CentOS/&title=Command Pada CentOS"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://muga.my.id/2019/09/28/Command-Pada-CentOS/&title=Command Pada CentOS"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=https://muga.my.id/2019/09/28/Command-Pada-CentOS/&title=Command Pada CentOS"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://muga.my.id/2019/09/28/Command-Pada-CentOS/&name=Command Pada CentOS&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://muga.my.id/2019/09/29/SSH-Trik/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://muga.my.id/2019/09/29/SSH-Trik/&text=SSH Trik"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://muga.my.id/2019/09/29/SSH-Trik/&title=SSH Trik"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://muga.my.id/2019/09/29/SSH-Trik/&is_video=false&description=SSH Trik"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=SSH Trik&body=Check out this article: https://muga.my.id/2019/09/29/SSH-Trik/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://muga.my.id/2019/09/29/SSH-Trik/&title=SSH Trik"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://muga.my.id/2019/09/29/SSH-Trik/&title=SSH Trik"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://muga.my.id/2019/09/29/SSH-Trik/&title=SSH Trik"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://muga.my.id/2019/09/29/SSH-Trik/&title=SSH Trik"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://muga.my.id/2019/09/29/SSH-Trik/&name=SSH Trik&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -110,7 +110,7 @@
   <header>
     
     <h1 class="posttitle" itemprop="name headline">
-        Command Pada CentOS
+        SSH Trik
     </h1>
 
 
@@ -121,7 +121,7 @@
       </span>
       
     <div class="postdate">
-        <time datetime="2019-09-28T06:46:00.000Z" itemprop="datePublished">2019-09-28</time>
+        <time datetime="2019-09-29T03:30:09.000Z" itemprop="datePublished">2019-09-29</time>
     </div>
 
 
@@ -132,8 +132,9 @@
   
 
   <div class="content" itemprop="articleBody">
-    <p>top -c</p>
-<p>top:<br>-c : ps aux</p>
+    <p><img src="/images/ssh.png" alt="upload successful"></p>
+<p>SSH, atau Secure Shell, merupakan protokol administrasi remote yang memperbolehkan pengguna untuk mengontrol dan memodifikasi server remote mereka melalui internet.</p>
+<p>ssh [user]@[host]<br>:~$ ssh <a href="mailto:root@117.53.x.x" target="_blank" rel="noopener">root@117.53.x.x</a></p>
 
   </div>
 </article>
@@ -165,16 +166,16 @@
 
     <div id="share-footer" style="display: none">
       <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://muga.my.id/2019/09/28/Command-Pada-CentOS/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=https://muga.my.id/2019/09/28/Command-Pada-CentOS/&text=Command Pada CentOS"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://muga.my.id/2019/09/28/Command-Pada-CentOS/&title=Command Pada CentOS"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://muga.my.id/2019/09/28/Command-Pada-CentOS/&is_video=false&description=Command Pada CentOS"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=Command Pada CentOS&body=Check out this article: https://muga.my.id/2019/09/28/Command-Pada-CentOS/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=https://muga.my.id/2019/09/28/Command-Pada-CentOS/&title=Command Pada CentOS"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=https://muga.my.id/2019/09/28/Command-Pada-CentOS/&title=Command Pada CentOS"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://muga.my.id/2019/09/28/Command-Pada-CentOS/&title=Command Pada CentOS"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=https://muga.my.id/2019/09/28/Command-Pada-CentOS/&title=Command Pada CentOS"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://muga.my.id/2019/09/28/Command-Pada-CentOS/&name=Command Pada CentOS&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://muga.my.id/2019/09/29/SSH-Trik/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://muga.my.id/2019/09/29/SSH-Trik/&text=SSH Trik"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://muga.my.id/2019/09/29/SSH-Trik/&title=SSH Trik"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://muga.my.id/2019/09/29/SSH-Trik/&is_video=false&description=SSH Trik"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=SSH Trik&body=Check out this article: https://muga.my.id/2019/09/29/SSH-Trik/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://muga.my.id/2019/09/29/SSH-Trik/&title=SSH Trik"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://muga.my.id/2019/09/29/SSH-Trik/&title=SSH Trik"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://muga.my.id/2019/09/29/SSH-Trik/&title=SSH Trik"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://muga.my.id/2019/09/29/SSH-Trik/&title=SSH Trik"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://muga.my.id/2019/09/29/SSH-Trik/&name=SSH Trik&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
